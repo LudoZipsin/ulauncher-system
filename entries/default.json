@@ -25,7 +25,7 @@
         "description": "Suspend to disk.",
         "icon": "system-suspend-hibernate",
         "aliases": ["suspend", "hibernate"],
-        "command": "systemctl hibernate -i"
+        "command": "pkexec env DISPLAY=$DISPLAY XAUTHORITY=$XAUTHORITY hibernate"
     },
     "restart": {
         "name": "Restart",
